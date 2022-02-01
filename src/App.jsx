@@ -13,17 +13,14 @@ function App() {
     <div>
 
       <Router>
-        <Footer/>
+        <Footer/>        
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="characters" element={<CharactersPage/>}/>
           <Route path="houses" element={<HousesPage/>}/>
           <Route path="chronology" element={<ChronologyPage/>}/>
-
-          
-            
-
         </Routes>
+        
       </Router>
 
 
