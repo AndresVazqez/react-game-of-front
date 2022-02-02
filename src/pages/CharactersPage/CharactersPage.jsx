@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './CharactersPage.scss';
+import { getAllCharacters } from "../../api/fetchToApi";
+import CharacterCard from "../../components/CharacterCard/CharacterCard";
 
-const CharactersPage = () => {
+
+const Characters = () => {
+  const [characters, setCharacters] = useState([]);
+
+  useEffect(() => {
+    getAllCharacters().then((data) => {
+      setCharacters(data);
+    });
+  }, []);
+
+  console.log("Characters:", characters);
+
   return (
-
-           <div>Characters</div>
-  )
+    <div>
+      <h2>Characters</h2>
+      <hr />
+      <div className="characters-container">
+      {characters.map((character) => (
+        <CharacterCard key={character.id} character={character}/>
+      ))}
+      </div>
+    </div>
+  );
 };
 
-export default CharactersPage;
+export default Characters;
