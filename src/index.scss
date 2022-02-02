@@ -1,4 +1,8 @@
+* {
 
+  margin: 0;
+  padding: 0;
+}
 
 
 body {
@@ -9,8 +13,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: rgb(30, 30, 30);
+  background: rgb(0, 0, 0);
 
   color: whitesmoke;
+  padding: 0;
 }
 
