@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import './Footer.scss';
 
 const Footer = () => {
 
   return (
 
-    <footer>
-        <nav>
-            <Link to ='/'>Home</Link>
-            <Link to='/characters'>Characters</Link>    
-            <Link to='/houses'>Houses</Link>
-            <Link to='/chronology'>Chronology</Link>         
+    <footer className='footer'>
+        <nav className='footer__nav'>
+            <Link className='footer__nav--a' to ='/'>Home</Link>
+            <Link className='footer__nav--a' to='/characters'>Characters</Link>    
+            <Link className='footer__nav--a' to='/houses'>Houses</Link>
+            <Link className='footer__nav--a' to='/chronology'>Chronology</Link>         
         </nav>
 
     </footer>

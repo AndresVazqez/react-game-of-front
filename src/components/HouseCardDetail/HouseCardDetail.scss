@@ -1,0 +1,88 @@
+@import '../../index.scss';
+
+.c-house {
+    width: 85vw;
+    //border: 1px solid red;
+    margin: 50px auto;
+    padding: 10px;
+    
+    @include desktop {
+
+        width: 72vw;
+    }
+    
+    &__logo {
+
+        //border:  1px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        
+        img {
+            margin: 0 auto;
+            width: 70%;
+
+            @include desktop {
+
+                width: 17%;
+            }
+        }
+
+        h4{
+
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 5px;
+            text-align: center;
+
+            @include desktop {
+
+                font-size: 32px; 
+            }
+        }
+    }
+
+    &__info {
+
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        //border: 1px solid blue;
+        flex-direction: column;
+
+
+        @include desktop {     
+
+            flex-direction: row;
+
+        }
+
+
+        &--card {
+
+            width: 100%;
+           // border: 1px solid red;
+            margin: 10px 0;
+            
+
+            @include desktop {
+
+                width: 150px;                
+                margin: 10px;
+
+            }
+
+            h2 {
+
+                margin: 5px 0 18px;
+            }
+
+            p {
+                font-size: 14px;
+                margin: 10px 0;
+            }
+        }    
+    } 
+}
