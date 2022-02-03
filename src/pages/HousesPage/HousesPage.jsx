@@ -16,9 +16,7 @@ const Houses = () => {
   console.log("Houses:", houses);
 
   return (
-    <div>
-      <h2>Houses</h2>
-      <hr />
+    <div>          
       <div className="houses-container">
       {houses.map((house) => (
         <HouseCard key={house._id} house={house}/>

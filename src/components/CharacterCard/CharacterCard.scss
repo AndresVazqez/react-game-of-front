@@ -1,20 +1,23 @@
+
 .character {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   top: 10px;
-  margin: 5px;
+  margin: 5px; 
+  
 
   &__container {
     padding: 5px;
     width: 160px;
     margin: 5px;
     border: 2px solid rgba(255, 113, 113, 0.493);
+    
+    
 
     img {
       width: 100%;
       height: 260px;
-
       object-fit: cover;
     }
 
@@ -23,6 +26,7 @@
       text-transform: uppercase;
       text-decoration: none;
       color: whitesmoke;
+      text-align: center;
     }
   }
 }
