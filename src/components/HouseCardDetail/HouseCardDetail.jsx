@@ -6,7 +6,7 @@ const HouseCardDetail = ({ house }) => {
   return (
     <div className="c-house">
       <div className="c-house__logo">
-        <img src={house[0].logoURL} alt={house[0].name} />
+        <img src={!house[0].logoURL ? house[0].logoURL = './Images/got-house.png' :  house[0].logoURL } alt={house[0].name} />
         <h4>{house[0].name}</h4>
       </div>
 

@@ -7,7 +7,7 @@ const HouseCard = ({ house }) => {
       
       <figure className="house">
       <div className="house__container">
-        <img src={house.logoURL} alt={house.name} />
+        <img src={ !house.logoURL ? house.logoURL = './Images/got-house.png' :  house.logoURL } alt={house.name} />
         <h4>{house.name}</h4>
       </div>
       </figure>

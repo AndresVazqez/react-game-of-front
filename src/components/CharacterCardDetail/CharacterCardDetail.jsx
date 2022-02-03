@@ -7,7 +7,7 @@ const CharacterCardDetail = ({ character }) => {
 
       <div className="detail__character">
         <div className="detail__character--img">
-            <img src={character.image} alt={character.name} />
+            <img src={ !character.image ? character.image = './Images/nicolas-cage-of-thrones.jpg' : character.image } alt={character.name} />
         </div>        
         <h4>{character.name}</h4>
       </div>
