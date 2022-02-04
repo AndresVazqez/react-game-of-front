@@ -3,17 +3,14 @@ import "./Chronology.scss";
 
 const Chronology = ({ character }) => {
 
-   
 
   return (
-    <figure className="chrono">      
-      {character.age && character.age.age !== null && character.age.age !== undefined ? (
-        <div className="chrono__container">
+    <figure className="chrono">   
+        <div className="chrono__card">
           <h4>{character.name}</h4>
           <h4>{character.age.age}</h4>
           <img src={ character.image } alt={character.name} />
-        </div>
-      ) : null}
+        </div>    
     </figure>
   );
 };

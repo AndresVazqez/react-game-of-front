@@ -6,13 +6,13 @@
     height: 80px;
     //background: rgba(245, 245, 245, 0.39);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     &__nav {
         
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;        
 
         &--a {
@@ -20,7 +20,7 @@
             padding: 8px;
             text-decoration: none;
             color: #ffffff;
-            font-size: calc(10px + 0.5vw);
+            font-size: calc(8px + 0.5vw);
             text-transform: uppercase;
 
             @include desktop{

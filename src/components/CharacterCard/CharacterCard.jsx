@@ -6,9 +6,9 @@ const CharacterCard = ({ character }) => {
   return (
     <Link to={generatePath("/characters/:name", { name: character.name })}>
       <figure className="character">
-        <div className="character__container">
+        <div className="character__container">          
           <img src={ !character.image ? character.image = './Images/nicolas-cage-of-thrones.jpg' : character.image } alt={character.name} />
-          <h4>{character.name}</h4>
+          <h4>{character.name}</h4>          
         </div>
       </figure>
     </Link>

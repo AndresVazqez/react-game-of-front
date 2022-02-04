@@ -6,76 +6,46 @@ import Chronology from "../../components/Chronology/Chronology";
 
 
 const ChronologyPage = () => {
-    const [characters, setCharacters] = useState([]);
-   // const [ ageOrder, setAgeOrder ] = useState(true)
+  const [characters, setCharacters] = useState([]);
+  const [ageOrder, setAgeOrder] = useState(true)
 
-    const charactersFiltred = [] 
-   
-    
-    for (let character of characters) {
+  const charactersFiltred = []
 
-      if (character.age && character.age.age !== null && character.age.age !== undefined) {
-  
-        charactersFiltred.push(character)
-      }
+
+  for (let character of characters) {
+
+    if (character.age && character.age.age !== null && character.age.age !== undefined) {
+
+      charactersFiltred.push(character)
     }
-    
-    // const changeOrder = () => {
+  }
+  console.log(ageOrder);
 
-    //   if (ageOrder) {
+  useEffect(() => {
+    getAllCharacters().then((data) => {
+      setCharacters(data);
+    });
 
-    //     charactersFiltred.sort( function (a , b) {
-    //       if( a.age.age < b.age.age ) {
-    //         return 1;
-    //       } 
-    //         if (a.age.age > b.age.age) {
-    //           return -1;
-    //       }
-    //         return 0;
-    //     }) 
+  }, []);
 
-    //   } else {
+  return (
+    <div>
+      <h2>Cronología</h2>
+      <hr />
+      <button onClick={() => { ageOrder === true ? setAgeOrder(false) : setAgeOrder(true) }}>Order</button>
 
-    //     charactersFiltred.sort( function (a , b) {
-    //       if( a.age.age > b.age.age ) {
-    //         return 1;
-    //       } 
-    //         if (a.age.age < b.age.age) {
-    //           return -1;
-    //       }
-    //         return 0;
-    //     }) 
-
-    //   }
-
-    // }
-    
-
-    console.log(charactersFiltred);
+      <div className="chronology-container">
 
 
+        {ageOrder === true ? charactersFiltred.sort((prev, next) => prev.age.age - next.age.age).map((character) => (
+          <Chronology key={character.id} character={character} />
 
-    useEffect(() => {
-      getAllCharacters().then((data) => {
-        setCharacters(data);
-       // changeOrder()
-      });
-
-    }, []); 
-
-  
-    return (
-      <div>
-        <h2>Cronología</h2>
-        <hr />
-        {/* <button onClick={changeOrder}>Order</button> */}
-        <div className="chonology-container">
-        {charactersFiltred.map((character) => (
-          <Chronology key={character.id} character={character}/>
+        )) : charactersFiltred.sort((prev, next) => next.age.age - prev.age.age).map((character) => (
+          <Chronology key={character.id} character={character} />
         ))}
-        </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 export default ChronologyPage;

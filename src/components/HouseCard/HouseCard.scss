@@ -1,6 +1,5 @@
 .house {
     display: flex;
-    
     flex-wrap: wrap;
     justify-content: space-evenly;
     top: 10px;
@@ -9,16 +8,14 @@
 
     &__container {
 
-      padding: 5px;
-      width: 260px;
+      padding: 5px;      
+      width: 260px;      
       margin: 5px;
       border: 2px solid rgba(255, 113, 113, 0.493);
 
-      
-  
       img {
         width: 100%;
-        object-fit: cover;
+        object-fit: cover;        
       }
 
       h4 {

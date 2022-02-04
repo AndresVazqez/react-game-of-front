@@ -39,7 +39,8 @@
 
             @include desktop {
 
-                font-size: 32px; 
+                font-size: 24px; 
+                margin: 20px 0px;
             }
         }
     }
@@ -77,11 +78,17 @@
             h2 {
 
                 margin: 5px 0 18px;
+
+                @include desktop {
+
+                    font-size: 18px;
+                }
             }
 
             p {
                 font-size: 14px;
                 margin: 10px 0;
+                font-family:'Times New Roman', Times, serif;
             }
         }    
     } 

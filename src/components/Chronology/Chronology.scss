@@ -1,0 +1,26 @@
+
+.chrono {
+    background: lightgreen;
+    width: 50%;
+    margin: 40 auto;
+    border: 1px solid red;    
+
+   
+
+    &__card {
+
+        background: lemonchiffon;
+        width: 80%;
+
+        margin: 10px;
+
+        &::after {
+            background: lightcoral;
+        }
+
+       
+    
+    }
+
+   
+}

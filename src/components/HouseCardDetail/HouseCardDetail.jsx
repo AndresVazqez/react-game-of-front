@@ -13,7 +13,7 @@ const HouseCardDetail = ({ house }) => {
       <div className="c-house__info">
         <div className="c-house__info--card">
           <h2>Lema</h2>
-          {house[0].words}          
+          <p>{house[0].words} </p>         
         </div>
 
         <div className="c-house__info--card">
@@ -28,7 +28,7 @@ const HouseCardDetail = ({ house }) => {
         </div>
 
         <div className="c-house__info--card">
-          <h2>Región</h2>
+          <h2>Region</h2>
           {!house[0].region.length ? (
             <p>Don't has region</p>
           ) : (
@@ -61,7 +61,7 @@ const HouseCardDetail = ({ house }) => {
         </div>
 
         <div className="c-house__info--card">
-          <h2>Fundación</h2>
+          <h2>Fundacion</h2>
           {house[0].createdAt.substr(0, 10)}
         </div>
       </div>

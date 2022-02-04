@@ -2,6 +2,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 94vw;
+    margin: 30px auto;
+    height: 75vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar{
+
+        width: 3px;
+        background: rgb(83, 81, 81);
+        
+    }
+
+    &::-webkit-scrollbar-thumb {
+
+        background: lightgray;        
+        
+        width: 3px;
+        border-radius: 20px;
+        height: 5px;
+    } 
 
     & a {
         text-decoration: none;

@@ -1,7 +1,9 @@
 import React from "react";
 import "./CharacterCardDetail.scss";
 
-const CharacterCardDetail = ({ character }) => {
+const CharacterCardDetail = ({ character, charhouse }) => {
+
+ 
   return (
     <div className="detail">
 

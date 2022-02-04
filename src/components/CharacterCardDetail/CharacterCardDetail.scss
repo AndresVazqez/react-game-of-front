@@ -51,10 +51,15 @@
         
 
         h4 {
-            font-size: 32px;
+            font-size: 22px;
             text-transform: uppercase;
-            margin: 5px 0px 15px;
-                    
+            margin: 5px 0px 25px;
+           
+            
+            @include desktop {
+
+                font-size: 32px;
+            }
         }
 
         
@@ -99,9 +104,15 @@
 
             h2 {
                 margin: 5px 0 15px;
-                font-size: 1.6rem;
+                font-size: 1rem;
                 text-align: center;                   
-                top: 0;                   
+                top: 0;  
+                
+                @include desktop {
+
+                    font-size: 1.2rem;
+
+                }
             }
            
 
@@ -129,6 +140,7 @@
                     margin: 10px 0;
                     text-align: center;
                     font-size: 14px;
+                    font-family:'Times New Roman', Times, serif;
                 }
             }
         }
