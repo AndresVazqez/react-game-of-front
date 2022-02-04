@@ -3,7 +3,7 @@ import './HomePage.scss';
 
 const HomePage = () => {
   return (
-        <div className='homepage'>GAMES OF THRONES</div>
+        <div className='homepage'>GAME OF THRONES</div>
   )
 };
 

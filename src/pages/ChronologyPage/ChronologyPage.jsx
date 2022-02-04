@@ -35,8 +35,6 @@ const ChronologyPage = () => {
       <button onClick={() => { ageOrder === true ? setAgeOrder(false) : setAgeOrder(true) }}>Order</button>
 
       <div className="chronology-container">
-
-
         {ageOrder === true ? charactersFiltred.sort((prev, next) => prev.age.age - next.age.age).map((character) => (
           <Chronology key={character.id} character={character} />
 
