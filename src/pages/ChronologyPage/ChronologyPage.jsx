@@ -11,15 +11,13 @@ const ChronologyPage = () => {
 
   const charactersFiltred = []
 
-
   for (let character of characters) {
 
     if (character.age && character.age.age !== null && character.age.age !== undefined) {
 
       charactersFiltred.push(character)
     }
-  }
-  console.log(ageOrder);
+  }  
 
   useEffect(() => {
     getAllCharacters().then((data) => {
@@ -29,12 +27,11 @@ const ChronologyPage = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Cronología</h2>
-      <hr />
-      <button onClick={() => { ageOrder === true ? setAgeOrder(false) : setAgeOrder(true) }}>Order</button>
+    <div className="chronology">    
+      <button className="btnchrono" onClick={() => { ageOrder === true ? setAgeOrder(false) : setAgeOrder(true) }}>O</button>
 
-      <div className="chronology-container">
+      <div className="chronology__container">
+
         {ageOrder === true ? charactersFiltred.sort((prev, next) => prev.age.age - next.age.age).map((character) => (
           <Chronology key={character.id} character={character} />
 

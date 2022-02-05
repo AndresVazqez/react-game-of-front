@@ -23,8 +23,7 @@ const Houses = () => {
 
 
   return (
-    <div>       
-      <h2>Houses</h2>
+    <div>    
       <Searcher filter={filter} setFilter={setFilter} />
 			<div className='houses-container'>
 				{loading ? (

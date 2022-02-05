@@ -1,0 +1,45 @@
+.btnchrono {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 59px;
+    width: 59px;
+    border: 3px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 20px auto;    
+    
+}
+
+.chronology{
+
+    width: 90%;
+    height: 76vh;
+    overflow-y: auto;
+    margin: 60px auto;
+    border: 1px solid red;
+
+    &::-webkit-scrollbar{
+
+        width: 3px;
+        background: rgb(83, 81, 81);
+        
+    }
+
+    &::-webkit-scrollbar-thumb {
+
+        background: lightgray;        
+        
+        width: 3px;
+        border-radius: 20px;
+        height: 5px;
+    } 
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+

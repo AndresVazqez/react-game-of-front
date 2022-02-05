@@ -1,4 +1,5 @@
 import React from 'react'
+import './Searcher.scss';
 
 export const Searcher = ({ filter, setFilter }) => {
 	const handleInput = ({ target }) => {
@@ -7,6 +8,7 @@ export const Searcher = ({ filter, setFilter }) => {
 
 	return (
 		<section className='search'>
+			 <img src="./Images/lupa.svg" alt="" />  
 			<input
 				type='text'
 				placeholder='...'

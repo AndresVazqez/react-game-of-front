@@ -1,11 +1,13 @@
 import React from "react";
 import "./CharacterCardDetail.scss";
+import { Link } from "react-router-dom";
 
-const CharacterCardDetail = ({ character, charhouse }) => {
+const CharacterCardDetail = ({ character }) => {
 
  
   return (
     <div className="detail">
+      <Link className="volver" to="/characters"><img src="../Images/Vector.png" alt="arrow-back" /> Volver</Link>
 
       <div className="detail__character">
         <div className="detail__character--img">
@@ -25,7 +27,7 @@ const CharacterCardDetail = ({ character, charhouse }) => {
           <h2>Alianzas</h2>
           <div className="detail__info--card--list">
             {character.allegiances.map((item) => (
-              <p key={item}>{item}</p>
+              <p key={item.allegiances}>{item}</p>
             ))}
           </div>
         </div>
@@ -33,7 +35,7 @@ const CharacterCardDetail = ({ character, charhouse }) => {
           <h2>Apariciones</h2>
           <div className="detail__info--card--list">
             {character.appearances.map((item) => (
-              <p key={item}>{item}</p>
+              <p key={item.appearances}>{item}</p>
             ))}
           </div>
         </div>
@@ -47,7 +49,7 @@ const CharacterCardDetail = ({ character, charhouse }) => {
           <h2>Descendientes</h2>
           <div className="detail__info--card--list">
             {character.siblings.map((item) => (
-              <p key={item}>{item}</p>
+              <p key={item.siblings}>{item}</p>
             ))}
           </div>
         </div>
@@ -55,7 +57,7 @@ const CharacterCardDetail = ({ character, charhouse }) => {
           <h2>Títulos</h2>
           <div className="detail__info--card--list">
             {character.titles.map((item) => (
-              <p key={item}>{item}</p>))}
+              <p key={item.titles}>{item}</p>))}
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Footer />
+        
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="characters" element={<CharactersPage />} />
@@ -21,6 +21,7 @@ function App() {
           <Route path="houses/:id" element={<HouseDetailPage />} />
           <Route path="chronology" element={<ChronologyPage />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

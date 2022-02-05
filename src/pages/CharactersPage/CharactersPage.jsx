@@ -21,19 +21,18 @@ const Characters = () => {
 	)
 
   return (
-    <div>
-      <h2>Characters</h2>
+    <div>      
       <Searcher filter={filter} setFilter={setFilter} />
 			<div className='characters-container'>
 				{loading ? (
 					<p>Loading...</p>
 				) : filteredChar.length > 0 ? (
 					filteredChar.map((character) => (
-						<CharacterCard key={character.id} character={character} />
+						<CharacterCard key={character._id} character={character} />
 					))
 				) : (
 					<p>
-						Character are not found{' '}
+						Character is not found{' '}
 						<strong>"{filter}"</strong>.
 					</p>
 				)}

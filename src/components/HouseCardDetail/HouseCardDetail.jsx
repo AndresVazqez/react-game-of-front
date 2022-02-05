@@ -1,10 +1,12 @@
 import React from "react";
 import "./HouseCardDetail.scss";
+import { Link } from "react-router-dom";
 
 const HouseCardDetail = ({ house }) => {
   console.log({ house });
   return (
     <div className="c-house">
+      <Link className="volver" to="/houses"><img src="../Images/Vector.png" alt="arrow-back" /> Volver</Link>
       <div className="c-house__logo">
         <img src={!house[0].logoURL ? house[0].logoURL = './Images/got-house.png' :  house[0].logoURL } alt={house[0].name} />
         <h4>{house[0].name}</h4>

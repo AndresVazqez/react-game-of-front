@@ -13,7 +13,7 @@
     width: 248px;
     height: 320px;
     margin: 5px;
-    border: 2px solid rgba(0, 255, 55, 0.493);
+    //border: 2px solid rgba(0, 255, 55, 0.493);
     position: relative;    
 
       &:hover {
@@ -21,7 +21,7 @@
         h4 {
           background: rgba(0, 0, 0, 0.61);
           padding: 18px;
-          color: whitesmoke;
+          color: #fff;
           font-size: 0.65rem; 
           height: 0.7rem;       
         }

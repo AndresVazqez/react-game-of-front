@@ -10,20 +10,21 @@
 
       padding: 5px;      
       width: 260px;      
-      margin: 5px;
-      border: 2px solid rgba(255, 113, 113, 0.493);
+      margin: 10px 5px;
+      //border: 2px solid rgba(125, 255, 113, 0.493);
 
       img {
-        width: 100%;
+        width: 248px;
+        height: 297px;
         object-fit: cover;        
       }
 
       h4 {
-        font-size: 0.65rem;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: whitesmoke;
+        font-size: 14px;
+        text-transform: uppercase;       
+        color: #fff;
         text-align: center;
+        margin-top: 9px;
      }
   }
 }
