@@ -1,12 +1,37 @@
 .homepage {
 
-    background-image: url('../../../public/Images/FondoHome.jpg');
-    height: 85vh;
-    background-size:cover;
+    background-image: url('../../../public/Images/FondoHome.png');
+    height: 99.5vh;
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     font-size: calc(15px + 8vw);
+    
+
+    &__lang {
+       
+        height: 80px;   
+        width: 90%;               
+        //background-color: cadetblue; 
+        display: flex;
+        justify-content: flex-end;
+        //margin-right: 9.75%;  
+    }
+    &__title {
+
+        margin: auto auto;
+    }
+
+     &__footer {
+         display: flex;
+         width: 100%;
+        margin-bottom: 18px;
+
+     }
 }

@@ -1,45 +1,104 @@
+
+.nav {
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 19px 3.75% ;
+  
+  &__chronology {
+
+      display: flex;
+      align-items: center;     
+      
+  }
+}
+
+
 .btnchrono {
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    width: 59px;
-    width: 59px;
-    border: 3px solid #fff;
-    background: transparent;
-    color: #fff;
-    border-radius: 50%;
-    padding: 15px;
-    margin: 20px auto;    
-    
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  width: 59px;
+  width: 59px;
+  border: 3px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 3px auto;
 }
 
-.chronology{
+.chronology {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 70vh;
+  overflow-y: auto;
+  margin: 30px auto;
 
-    width: 90%;
-    height: 76vh;
-    overflow-y: auto;
-    margin: 60px auto;
-    border: 1px solid red;
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1px;
 
-    &::-webkit-scrollbar{
-
-        width: 3px;
-        background: rgb(83, 81, 81);
-        
+    .arrow {
+      width: 30px;
+      margin: 0 auto;
+      transform: rotate(990deg);
+      transition: 2s;
+      margin-bottom: 4px;
     }
 
-    &::-webkit-scrollbar-thumb {
-
-        background: lightgray;        
-        
-        width: 3px;
-        border-radius: 20px;
-        height: 5px;
-    } 
-
-    & a {
-        text-decoration: none;
+    .arrow.arrowUp {
+        transform: rotate(90deg);
+        transition: 2s;      
     }
+  }
+
+  &__gallery {
+    display: flex;
+    margin: 0 auto;
+
+    &--pair {
+        margin-top: 0px;
+      width: 50%;
+      border-right: 1.5px solid rgb(255, 255, 255);
+      transition: 0.5s;
+    }
+    &--odd {
+      width: 50%; 
+      margin-top: 90px;
+      transition: 0.5s;
+    }
+
+    &--pair1 {
+    margin-top: 90px;
+      width: 50%;
+      transition: 0.5s;
+    }
+
+    &--odd1 {
+    margin-top: 0px;
+      width: 50%;
+      border-left: 1.5px solid rgb(255, 255, 255);
+      transition: 0.5s;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background: rgb(83, 81, 81);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: lightgray;
+
+    width: 3px;
+    border-radius: 20px;
+    height: 5px;
+  }
+
+  & a {
+    text-decoration: none;
+  }
 }
-
-

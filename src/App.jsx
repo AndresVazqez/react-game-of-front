@@ -4,7 +4,6 @@ import HomePage from "./pages/HomePage/HomePage";
 import CharactersPage from "./pages/CharactersPage/CharactersPage";
 import HousesPage from "./pages/HousesPage/HousesPage";
 import ChronologyPage from "./pages/ChronologyPage/ChronologyPage";
-import Footer from "./components/Footer/Footer";
 import CharacterDetailPage from "./pages/CharacterDetailPage/CharacterDetailPage"
 import HouseDetailPage from "./pages/HouseDetailPage/HouseDetailPage";
 
@@ -21,7 +20,7 @@ function App() {
           <Route path="houses/:id" element={<HouseDetailPage />} />
           <Route path="chronology" element={<ChronologyPage />} />
         </Routes>
-        <Footer />
+        
       </Router>
     </div>
   );

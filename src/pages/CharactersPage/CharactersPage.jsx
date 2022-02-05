@@ -2,27 +2,37 @@ import React, { useState, useEffect } from "react";
 import './CharactersPage.scss';
 import { getAllCharacters } from "../../api/fetchToApi";
 import CharacterCard from "../../components/CharacterCard/CharacterCard";
-import {Searcher} from "../../components/Searcher/Searcher";
+import { Searcher } from "../../components/Searcher/Searcher";
+import Footer from "../../components/Footer/Footer";
+import HomeIcon from '../../components/HomeIcon/HomeIcon';
+import Languages from '../../components/Languages/Languages';
+
 
 const Characters = () => {
-  const [characters, setCharacters] = useState([]);
-  const [loading, setLoading] = useState(true)
-  const [filter, setFilter] = useState('')
+	const [characters, setCharacters] = useState([]);
+	const [loading, setLoading] = useState(true)
+	const [filter, setFilter] = useState('')
 
-  useEffect(() => {
-    getAllCharacters().then((data) => {
-      setCharacters(data);
-      setLoading(false);
-    });
-  }, []);
+	useEffect(() => {
+		getAllCharacters().then((data) => {
+			setCharacters(data);
+			setLoading(false);
+		});
+	}, []);
 
-  const filteredChar = characters.filter((character) =>
+	const filteredChar = characters.filter((character) =>
 		character.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
 	)
 
-  return (
-    <div>      
-      <Searcher filter={filter} setFilter={setFilter} />
+	return (
+		<div>
+			<nav className="navbar">
+				<Searcher filter={filter} setFilter={setFilter} />
+				<div className="navbar__icon">
+					<HomeIcon />
+					<Languages />
+				</div>
+			</nav>
 			<div className='characters-container'>
 				{loading ? (
 					<p>Loading...</p>
@@ -37,8 +47,9 @@ const Characters = () => {
 					</p>
 				)}
 			</div>
-    </div>
-  );
+			<Footer />
+		</div>
+	);
 };
 
 export default Characters;

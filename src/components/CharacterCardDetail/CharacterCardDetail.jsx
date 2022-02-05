@@ -1,13 +1,17 @@
 import React from "react";
 import "./CharacterCardDetail.scss";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const CharacterCardDetail = ({ character }) => {
+
+  
+ 
 
  
   return (
     <div className="detail">
-      <Link className="volver" to="/characters"><img src="../Images/Vector.png" alt="arrow-back" /> Volver</Link>
+      <Link className="volver"  to="/characters"><img src="../Images/Vector.png" alt="arrow-back" /> Volver</Link>
 
       <div className="detail__character">
         <div className="detail__character--img">
@@ -60,7 +64,7 @@ const CharacterCardDetail = ({ character }) => {
               <p key={item.titles}>{item}</p>))}
           </div>
         </div>
-      </div>
+      </div>      
     </div>
   );
 };

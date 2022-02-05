@@ -1,10 +1,25 @@
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 3.75% ;
+
+    &__icon {
+
+        display: flex;
+        align-items: center;
+    }
+}
+
 .characters-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 94vw;
     margin: 30px auto;
-    height: 76vh;
+    height: 70vh;
+    padding-right: 20px;
     overflow-y: auto;
 
     &::-webkit-scrollbar{
