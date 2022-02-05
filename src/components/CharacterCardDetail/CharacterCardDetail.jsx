@@ -1,13 +1,11 @@
 import React from "react";
 import "./CharacterCardDetail.scss";
 import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
+import { FormattedMessage } from "react-intl";
 
 const CharacterCardDetail = ({ character }) => {
 
   
- 
-
  
   return (
     <div className="detail">
@@ -22,13 +20,13 @@ const CharacterCardDetail = ({ character }) => {
 
       <div className="detail__info">
         <div className="detail__info--card">
-          <h2>Casa</h2>
+          <h2><FormattedMessage id="house" defaultMessage="casa" /></h2>
           <div className="detail__info--card--list">
             <p>{character.house}</p>
           </div>
         </div>
         <div className="detail__info--card">
-          <h2>Alianzas</h2>
+          <h2><FormattedMessage id="allegiance" defaultMessage="alianzas" /></h2>
           <div className="detail__info--card--list">
             {character.allegiances.map((item) => (
               <p key={item.allegiances}>{item}</p>

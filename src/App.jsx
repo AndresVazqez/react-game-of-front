@@ -11,7 +11,6 @@ function App() {
   return (
     <div>
       <Router>
-        
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="characters" element={<CharactersPage />} />
