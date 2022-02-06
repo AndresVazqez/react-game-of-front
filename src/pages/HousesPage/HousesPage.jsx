@@ -6,6 +6,7 @@ import { Searcher } from "../../components/Searcher/Searcher";
 import Footer from "../../components/Footer/Footer";
 import HomeIcon from "../../components/HomeIcon/HomeIcon";
 import Languages from "../../components/Languages/Languages";
+import { FormattedMessage } from "react-intl";
 
 
 const Houses = () => {
@@ -36,14 +37,14 @@ const Houses = () => {
       </nav>
       <div className='houses-container'>
         {loading ? (
-          <p>Loading...</p>
+          <h2><FormattedMessage id="load" defaultMessage="cargando..." /></h2>
         ) : filteredHouse.length > 0 ? (
           filteredHouse.map((house) => (
             <HouseCard key={house.id} house={house} />
           ))
         ) : (
           <p>
-            House not found{' '}
+            ⛔:{' '}
             <strong>"{filter}"</strong>.
           </p>
         )}

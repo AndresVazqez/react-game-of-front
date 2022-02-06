@@ -6,6 +6,7 @@ import { Searcher } from "../../components/Searcher/Searcher";
 import Footer from "../../components/Footer/Footer";
 import HomeIcon from '../../components/HomeIcon/HomeIcon';
 import Languages from '../../components/Languages/Languages';
+import { FormattedMessage } from "react-intl";
 
 
 const Characters = () => {
@@ -35,14 +36,14 @@ const Characters = () => {
 			</nav>
 			<div className='characters-container'>
 				{loading ? (
-					<p>Loading...</p>
+					  <h2><FormattedMessage id="load" defaultMessage="cargando..." /></h2>
 				) : filteredChar.length > 0 ? (
 					filteredChar.map((character) => (
 						<CharacterCard key={character._id} character={character} />
 					))
 				) : (
 					<p>
-						Character is not found{' '}
+						⛔:{' '}
 						<strong>"{filter}"</strong>.
 					</p>
 				)}

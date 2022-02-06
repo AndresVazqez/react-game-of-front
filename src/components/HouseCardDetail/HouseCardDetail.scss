@@ -1,8 +1,7 @@
 @import '../../index.scss';
 
 .c-house {
-    width: 85vw;
-    //border: 1px solid red;
+    width: 85vw;    
     margin: 50px auto;
     padding: 10px;
     
@@ -13,7 +12,6 @@
     
     &__logo {
 
-        //border:  1px solid blue;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -49,8 +47,7 @@
 
         display: flex;
         justify-content: space-around;
-        text-align: center;
-        //border: 1px solid blue;
+        text-align: center;        
         flex-direction: column;
 
 
@@ -63,8 +60,7 @@
 
         &--card {
 
-            width: 100%;
-           // border: 1px solid red;
+            width: 100%;           
             margin: 10px 0;
             
 
@@ -88,7 +84,7 @@
             p {
                 font-size: 14px;
                 margin: 10px 0;
-                font-family:'Times New Roman', Times, serif;
+                font-family:'Lato', Times, serif;
             }
         }    
     } 

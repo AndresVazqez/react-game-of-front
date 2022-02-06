@@ -48,6 +48,7 @@ const ChronologyPage = () => {
 				</div>
 			</nav>
       
+      
     <div className="chronology">
     
       <div className="chronology__btn">   

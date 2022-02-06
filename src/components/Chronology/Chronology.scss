@@ -1,9 +1,7 @@
 @import "../../index.scss";
 
-.chrono {
-  //background: lightgreen;
-  width: 100%;
-  // border: 1px solid blue;
+.chrono {  
+  width: 100%;  
   margin: 0 auto;
 
   &__card {
@@ -16,7 +14,7 @@
     border-top: 3px solid white;
 
     p {
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: Georgia, "Lato", Times, serif;
       font-size: 16px;
 
       @include desktop {

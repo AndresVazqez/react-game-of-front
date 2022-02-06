@@ -1,7 +1,19 @@
 {
+    "back": "Back",
     "char": "characters",
     "houses": "houses",
     "chrono": "chronology",
     "house": "house",
-    "allegiance": "allegiances"
+    "allegiance": "allegiance",    
+    "appearances" : "appearances",
+    "father": "father",
+    "siblings": "siblings",
+    "titles": "titles",
+    "words": "words",
+    "seat": "seat",
+    "region": "region",
+    "religions": "religions",
+    "Foundation": "Foundation",
+    "load": "Loading..."
+
 }

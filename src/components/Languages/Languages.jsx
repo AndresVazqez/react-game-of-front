@@ -10,7 +10,7 @@ const Languages = () => {
     <div className="c-languages">
       <input
         type="image"
-        src="./Images/Spanish.svg"
+        src="../Images/Spanish.svg"
         alt="Spanish Flag"
         value={"es"}
         onClick={context.selectLanguage}
@@ -18,7 +18,7 @@ const Languages = () => {
 
       <input
         type="image"
-        src="./Images/English.svg"
+        src="../Images/English.svg"
         alt="English Flag"
         value={"en"}
         onClick={context.selectLanguage}

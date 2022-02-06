@@ -1,45 +1,55 @@
+@import "../../index.scss";
+
 .navbar {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 3.75%;
 
-    display: flex;
+  @include desktop {
+    
     justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__icon {
+    display: flex;
     align-items: center;
-    padding: 19px 3.75% ;
-
-    &__icon {
-
-        display: flex;
-        align-items: center;
-    }
+  }
 }
 
-.characters-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 94vw;
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 94vw;
+  margin: 20px auto;
+  height: 63vh;
+  padding-right: 0px;
+  overflow-y: auto;
+
+  @include desktop {
     margin: 30px auto;
+    justify-content: space-around;
     height: 70vh;
     padding-right: 20px;
-    overflow-y: auto;
+  }
 
-    &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
+    width: 3px;
+    background: rgb(83, 81, 81);
+  }
 
-        width: 3px;
-        background: rgb(83, 81, 81);
-        
-    }
+  &::-webkit-scrollbar-thumb {
+    background: lightgray;
 
-    &::-webkit-scrollbar-thumb {
+    width: 3px;
+    border-radius: 20px;
+    height: 5px;
+  }
 
-        background: lightgray;        
-        
-        width: 3px;
-        border-radius: 20px;
-        height: 5px;
-    } 
-
-    & a {
-        text-decoration: none;
-    }
-
+  & a {
+    text-decoration: none;
+  }
 }

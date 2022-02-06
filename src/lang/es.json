@@ -1,7 +1,19 @@
 {
+    "back": "Volver",
     "char": "personajes",
     "houses": "casas",
     "chrono": "cronología",
     "house": "casa",
-    "allegiance": "alianzas"
+    "allegiance": "alianzas",
+    "appearances" : "apariciones",
+    "father": "padre",
+    "siblings": "descendientes",
+    "titles": "titulos",
+    "words": "lema",
+    "seat": "Sede",
+    "region": "region",
+    "religions": "religiones",
+    "Foundation": "fundacion",
+    "load": "cargando..."
+
 }

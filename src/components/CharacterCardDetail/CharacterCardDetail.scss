@@ -1,173 +1,174 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
-.detail{
+.nav1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 3.75%;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__detail {
     display: flex;
-    flex-direction: column;   
-   // border: 1px solid red;
-    width: 90vw;    
-    margin: 50px auto;
-   //background: lightblue;
     align-items: center;
-    position: relative;    
+  }
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 50px auto;
+  align-items: center;
+  position: relative;
+
+  @include desktop {
+    margin: 0px auto;
+    width: 95vw;
+  }
+
+  &__character {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    margin-top: 30px;
 
     @include desktop {
-      
-        width: 95vw;                 
+      width: 60%;
     }
 
-    &__character {
+    &--img {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
 
-        width: 100%;        
+      img {
+        width: 248px;
+        height: 320px;
+        margin: 10px;
+        object-fit: cover;
+        object-position: 0px 0px;
+      }
+    }
+
+    h4 {
+      font-size: 22px;
+      text-transform: uppercase;
+      margin: 5px 0px 25px;
+
+      @include desktop {
+        font-size: 36px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    flex-direction: column;
+
+    @include desktop {
+      width: 80%;
+      height: 40%;
+      flex-direction: row;
+    }
+
+    &--card {
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      width: 100%;
+      margin: 5px 0;
+      
+
+      @include desktop {
+        margin: 0px 12px;
+        height: 260px;
+        width: 250px;
+      }
+
+      h2 {
+        margin: 0px 0 15px;
+        font-size: 1rem;
+        text-align: center;
+        top: 0;
+
+        @include desktop {
+          padding: 0 7px;
+
+          font-size: 22px;
+          font-weight: normal;
+        }
+      }
+
+      &--list {
+        height: 100%;
+        overflow-y: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 50%;
-       // border: 1px solid red;
-        margin-top: 30px;
 
-        @include desktop {
+        img {
+          width: 125px;
 
-            width: 60%;
+          @include desktop {
+            width: 160px;
+          }
         }
 
-        &--img {
 
-            width: 100% ;            
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 10px;            
-
-           
-            
-            img {
-                width: 248px;
-                height: 320px;
-                margin: 10px; 
-                object-fit: cover;
-                object-position: 0px 0px;               
-    
-                @include desktop {
-    
-                    
-                    
-                }
-            }
-
-        }
-        
-
-        h4 {
-            font-size: 22px;
-            text-transform: uppercase;
-            margin: 5px 0px 25px;
-           
-            
-            @include desktop {
-
-                font-size: 36px;
-            }
+        &::-webkit-scrollbar {
+          width: 3px;
+          background: rgb(83, 81, 81);
         }
 
-        
-    }  
-
-    &__info {
-
-        display: flex;
-        margin: 0 auto;
-        //border: 1px solid blue;
-        width: 100%;
-        height: 50%;
-        justify-content: space-around;
-        flex-direction: column;
-
-        
-        @include desktop {
-            
-            width: 60%;
-            height: 40%;            
-            flex-direction: row;
-
+        &::-webkit-scrollbar-thumb {
+          background: lightgray;
+          width: 3px;
+          border-radius: 20px;
+          height: 5px;
         }
-       
-        
 
-        &--card{
-            display: flex;
-            flex-direction: column;                
-            height: 200px;                
-            width: 100%;
-           // border: 1px solid red;
-
-            @include desktop {
-
-                              
-                height: 260px;                
-                width: 250px;                    
-                
-
-            }
-
-            h2 {
-                margin: 5px 0 15px;
-                font-size: 1rem;
-                text-align: center;                   
-                top: 0;  
-                
-                @include desktop {
-
-                    font-size: 22px;
-                    font-weight: normal;
-
-                }
-            }
-           
-
-            &--list {
-
-                height: 100%;
-                overflow-y: auto;                   
-
-                &::-webkit-scrollbar{
-
-                    width: 3px;                    
-                    background: rgb(83, 81, 81);
-                }
-
-                &::-webkit-scrollbar-thumb {
-                    
-                    background: lightgray; 
-                    width: 3px;
-                    border-radius: 20px;
-                    height: 5px;
-                }    
-                
-
-                p {
-                    margin: 10px 0;
-                    text-align: center;
-                    font-size: 14px;
-                    font-family:'Times New Roman', Times, serif;
-                }
-            }
+        p {
+          margin: 7px 0;
+          text-align: center;
+          font-size: 14px;
+          font-family: "Lato", Times, serif;
         }
+      }
     }
+  }
 }
 
 .volver {
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    position: absolute;
-    left: 0;        
+  font-size: 16px;
+  font-family: "Lato", Times, serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  
+  @include desktop {
+    
 
-    img {
-        width: 42px;
-        height: 29px;
-        margin-right: 10px;
-    }
+    left:60px;
+  }
+
+  img {
+    width: 42px;
+    height: 29px;
+    margin-right: 10px;
+  }
 }
