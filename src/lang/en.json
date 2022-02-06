@@ -13,7 +13,8 @@
     "seat": "seat",
     "region": "region",
     "religions": "religions",
-    "Foundation": "Foundation",
-    "load": "Loading..."
+    "foundation": "Foundation",
+    "load": "Loading...",
+    "not": "Unknown..."
 
 }

@@ -2,7 +2,7 @@
     "back": "Volver",
     "char": "personajes",
     "houses": "casas",
-    "chrono": "cronología",
+    "chrono": "cronologia",
     "house": "casa",
     "allegiance": "alianzas",
     "appearances" : "apariciones",
@@ -13,7 +13,8 @@
     "seat": "Sede",
     "region": "region",
     "religions": "religiones",
-    "Foundation": "fundacion",
-    "load": "cargando..."
+    "foundation": "fundacion",
+    "load": "cargando...",
+    "not": "Se desconoce..."
 
 }

@@ -11,6 +11,7 @@ import HomeIcon from "../../components/HomeIcon/HomeIcon";
 const ChronologyPage = () => {
   const [characters, setCharacters] = useState([]);
   const [ageOrder, setAgeOrder] = useState(true)
+  
 
   const charactersFiltred = [];
   const charPair = [];
@@ -31,6 +32,8 @@ const ChronologyPage = () => {
       charOdd.push(charactersFiltred[i]);
     }
   }
+
+ 
  
   useEffect(() => {
     getAllCharacters().then((data) => {
@@ -53,19 +56,21 @@ const ChronologyPage = () => {
     
       <div className="chronology__btn">   
       <button className="btnchrono" onClick={() => { 
-        (ageOrder === true ? setAgeOrder(false) : setAgeOrder(true))
+        (ageOrder === true ? setAgeOrder(false) : setAgeOrder(true))      
 
-        const btn$$ = document.querySelector(".btnchrono")
+       
         const arrow$$ = document.querySelector(".arrow")
         const changeOdd$$ = document.querySelector(".chronology__gallery--odd")
         const changePair$$ = document.querySelector(".chronology__gallery--pair")
+        
 
         arrow$$.classList.toggle("arrowUp")
         changeOdd$$.classList.toggle("chronology__gallery--odd1")
         changePair$$.classList.toggle("chronology__gallery--pair1")
-        btn$$.textContent="♾";
+       
+        
 
-      }}>0</button>
+      }}>{ageOrder === true ? '0' : '2016'}</button>
 
       <img className="arrow" src="../Images/Vector.png" alt="Vector"/>
       </div> 

@@ -12,11 +12,12 @@
 
         &--a {
             margin: 5px;
-            padding: 8px;
+            padding: 4px 0px;
             text-decoration: none;
             color: #ffffff;
-            font-size: calc(8px + 0.5vw);
+            font-size: 14px;
             text-transform: uppercase;
+            
 
             @include desktop{
                 
@@ -25,8 +26,9 @@
             }
 
             &.active {
-
+                padding-top: 6px;
                 border-bottom: 2px solid #ffffff;
+                
             }
         }
     }    

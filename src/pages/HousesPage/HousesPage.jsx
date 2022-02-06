@@ -40,7 +40,7 @@ const Houses = () => {
           <h2><FormattedMessage id="load" defaultMessage="cargando..." /></h2>
         ) : filteredHouse.length > 0 ? (
           filteredHouse.map((house) => (
-            <HouseCard key={house.id} house={house} />
+            <HouseCard key={house._id} house={house} />
           ))
         ) : (
           <p>

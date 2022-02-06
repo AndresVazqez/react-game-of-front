@@ -25,17 +25,17 @@ const CharacterDetailPage = () => {
   return (
     <div>
       <nav className="navbar">
-            <Link className="volver" to="/characters">
-              <img src="../Images/Vector.png" alt="arrow-back" />
-              <p>
-                <FormattedMessage id="back" defaultMessage="Volver" />
-              </p>
-            </Link>
+        <Link className="volver" to="/characters">
+          <img src="../Images/Vector.png" alt="arrow-back" />
+          <p>
+            <FormattedMessage id="back" defaultMessage="Volver" />
+          </p>
+        </Link>
         <div className="navbar__icon">
-            <HomeIcon />
-            <Languages />
-          </div>
-         
+          <HomeIcon />
+          <Languages />
+        </div>
+
       </nav>
 
       {character.length !== 0 ? (
