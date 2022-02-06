@@ -4,7 +4,7 @@ import { FormattedMessage } from "react-intl";
 const NotFound = () => {
   return (
 
-    <p><FormattedMessage id="not" defaultMessage="Se desconoce..." /> </p>
+    <span><FormattedMessage id="not" defaultMessage="Se desconoce..." /> </span>
   )
 };
 
