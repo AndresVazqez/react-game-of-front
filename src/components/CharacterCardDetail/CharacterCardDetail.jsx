@@ -36,7 +36,7 @@ const CharacterCardDetail = ({ character, charhouse }) => {
             <FormattedMessage id="house" defaultMessage="casa" />
           </h2>
           <div className="detail__info--card--list">
-            {imgHouse.length ? <img src={imgHouse[0].logoURL}/> : <img src='../Images/got-house.png'/> }           
+            {imgHouse.length && imgHouse[0].logoURL ? <img src={imgHouse[0].logoURL}/> : <img src='../Images/got-house.png'/> }           
           </div>
         </div>
         <div className="detail__info--card">
