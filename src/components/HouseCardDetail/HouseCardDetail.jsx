@@ -64,7 +64,7 @@ const HouseCardDetail = ({ house }) => {
 
         <div className="c-house__info--card">
         <h2><FormattedMessage id="foundation" defaultMessage="fundacion" /></h2>
-          {house[0].createdAt.substr(0, 10)}
+          <p>{house[0].createdAt.substr(0, 10)}</p>
         </div>
       </div>
     </div>
